@@ -1,0 +1,132 @@
+---
+title: "Looking for Solutions to a Regional Crisis"
+author: "MA615 2021"
+date: "10/5/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(png)
+library(jpeg)
+library(grid)
+library(gridExtra)
+library(tidyverse)
+library(readxl)
+```
+
+## Trouble in the Sahel
+
+<div style="font-size: 14pt">
+The the Sahel in Africa is the region between the Sahara Desert and the Savanah. 
+It includes the countries Burkina Faso, Cameroon, Chad, The Gambia, Guinea Mauritania, Mali, Niger, Nigeria and Senegal.
+</div>
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+
+
+img <- readJPEG("Sahel.jpg")
+ grid.raster(img)
+ 
+```
+
+
+-----
+
+<div style="font-size: 14pt">
+The UN has described the Sahel as a
+[land of opportunities](https://www.un.org/africarenewal/sahel), but today it is in crisis.  Violence in the Mali and Burkina Faso has created a refugee crisis.
+[UN Refugee Agency site for Sahel crisis](https://data2.unhcr.org/en/situations/sahelcrisis)
+</div>
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+img <- readJPEG("camp.jpg")
+ grid.raster(img)
+ 
+```
+
+-----
+
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+img <- readPNG("refugee.png")
+ grid.raster(img)
+ 
+```
+
+
+
+
+
+## The Question and the Data
+
+<div style="font-size: 14pt">
+What are the economic factors that affect this troubled region?  Do they offer any hope for quelling the suffering and violence?
+
+
+One source of information is the World Bank which tracks both poverty and spending power ( a measure of prosperity).
+
+
+Poverty -- see [Multidimensional Poverty Measure (MPM)](https://datacatalog.worldbank.org/search/dataset/0037589/World-Bank-s-Multidimensional-Poverty-Measure)
+
+Spending power -- see [International Comparison Program (ICP)](https://www.worldbank.org/en/programs/icp).  
+
+</div>
+
+
+
+
+## Areas of relative prosperity
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+
+img <- readPNG("ppp.png")
+ grid.raster(img)
+ 
+```
+<div style="font-size: 14pt">
+PPP is an economic theory that compares different contries' currencies through a "basket of goods" approach.
+</div>
+
+
+-----
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+
+img <- readPNG("monetary.png")
+ grid.raster(img)
+ 
+```
+
+
+
+
+
+## Extreme Poverty 
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+
+img <- readPNG("food.png")
+ grid.raster(img)
+ 
+```
+
+
+-----
+
+```{r fig.height=4,echo=FALSE, warning=FALSE}
+
+img <- readPNG("povcorr.png")
+ grid.raster(img)
+ 
+```
+
+
+
+## data sources 
+
+Spending power data is available by country here: [Data Bank ICP 2017](https://databank.worldbank.org/source/icp-2017).
+
+World Bank Poverty data is available here:
+ [Multidimensional Poverty Measure](https://www.worldbank.org/en/topic/poverty/brief/multidimensional-poverty-measure)
+
